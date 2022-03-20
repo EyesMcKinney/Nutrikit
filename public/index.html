@@ -5,11 +5,21 @@
   <title>Web Assignment 0</title>
   <meta name="description" content="First web assignment">
   <meta name="author" content="student name">
+  <script>
+      function changetype(){
+          var x = document.getElementById("types").value;
+          document.getElementById("foodtype").innerHTML = x;
+      }
+      function changecolor(){
+          var y = document.getElementById("colors").value;
+          document.getElementById("foodtype").style.color = y;
+      }
+  </script>
 </head>
 <body>
     <h1 style="font-family:Verdana;text-align: center;font-size: size 36px;">SWEN-344 Web Assignment 0</h1>
     <h2 style="font-family: Impact; text-align: center;">Section 00</h2>
-    <select name="types">
+    <select id="types" name="types" onchange="changetype()" style="text-align: center;">
         <option value="protein">Protein</option>
         <option value="carbs">Carbs</option>
         <option value="fruits">Fruits</option>
@@ -17,19 +27,19 @@
         <option value="sweets">Sweets</option>
     </select>
     <br>
-    <form>
-    <input type="radio">
+    <form id="colors" name="colors" style="text-align: center;">
+    <input type="radio" id="black" name="colors" value="black" onchange="changecolor()">
     <label for="black">Black</label>
-    <input type="radio">
+    <input type="radio" id="red" name="colors" value="red" onchange="changecolor()">
     <label for="red">Red</label>
-    <input type="radio">
+    <input type="radio" id="green" name="colors" value="green" onchange="changecolor()">
     <label for="green">Green</label>
-    <input type="radio">
+    <input type="radio" id="blue" name="colors" value="blue" onchange="changecolor()">
     <label for="blue">Blue</label>
-    <input type="radio">
+    <input type="radio" id="purple" name="colors" value="purple" onchange="changecolor()">
     <label for="purple">Purple</label>
     </form>
     <br>
-    <textarea style="text-align:center" id="foodtype" name="foodtype" rows="4" cols="50"></textarea>
+    <textarea style="text-align:center" id="foodtype" name="foodtype" rows="4" cols="50" style="text-align:center;"></textarea>
 </body>
 </html>
