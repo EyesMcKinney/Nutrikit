@@ -19,6 +19,7 @@
 <body>
     <h1 style="font-family:Verdana;text-align: center;font-size: size 36px;">SWEN-344 Web Assignment 0</h1>
     <h2 style="font-family: Impact; text-align: center;">Section 00</h2>
+    <div align="center">
     <select id="types" name="types" onchange="changetype()" style="text-align: center;">
         <option value="protein">Protein</option>
         <option value="carbs">Carbs</option>
@@ -26,6 +27,7 @@
         <option value="vegetables">Vegetables</option>
         <option value="sweets">Sweets</option>
     </select>
+    </div>
     <br>
     <form id="colors" name="colors" style="text-align: center;">
     <input type="radio" id="black" name="colors" value="black" onchange="changecolor()">
@@ -40,6 +42,8 @@
     <label for="purple">Purple</label>
     </form>
     <br>
-    <textarea style="text-align:center" id="foodtype" name="foodtype" rows="4" cols="50" style="text-align:center;"></textarea>
+    <div align="center">
+    <textarea style="text-align:center" id="foodtype" name="foodtype" rows="4" cols="50"></textarea>
+    </div>
 </body>
 </html>
