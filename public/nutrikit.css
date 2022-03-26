@@ -1,3 +1,25 @@
 * {
     font-family: 'Segoe UI';
 }
+
+body{
+    background-color: bisque;
+}
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
