@@ -24,41 +24,41 @@ function changetype(){
     if (selectedtype == "proteins"){
         var optionsList = proteins;
         document.getElementsByName('foods')[0].options[0].innerHTML = optionsList[0][0];
-        document.getElementsByName('foods')[1].options[1].innerHTML = optionsList[1][0];
-        document.getElementsByName('foods')[2].options[2].innerHTML = optionsList[2][0];
-        document.getElementsByName('foods')[3].options[3].innerHTML = optionsList[3][0];
-        document.getElementsByName('foods')[4].options[4].innerHTML = optionsList[4][0];
+        document.getElementsByName('foods')[0].options[1].innerHTML = optionsList[1][0];
+        document.getElementsByName('foods')[0].options[2].innerHTML = optionsList[2][0];
+        document.getElementsByName('foods')[0].options[3].innerHTML = optionsList[3][0];
+        document.getElementsByName('foods')[0].options[4].innerHTML = optionsList[4][0];
     }
     if (selectedtype == "fruits"){
         var optionsList = fruits;
         document.getElementsByName('foods')[0].options[0].innerHTML = optionsList[0][0];
-        document.getElementsByName('foods')[1].options[1].innerHTML = optionsList[1][0];
-        document.getElementsByName('foods')[2].options[2].innerHTML = optionsList[2][0];
-        document.getElementsByName('foods')[3].options[3].innerHTML = optionsList[3][0];
-        document.getElementsByName('foods')[4].options[4].innerHTML = optionsList[4][0];
+        document.getElementsByName('foods')[0].options[1].innerHTML = optionsList[1][0];
+        document.getElementsByName('foods')[0].options[2].innerHTML = optionsList[2][0];
+        document.getElementsByName('foods')[0].options[3].innerHTML = optionsList[3][0];
+        document.getElementsByName('foods')[0].options[4].innerHTML = optionsList[4][0];
     }
     if (selectedtype == "vegtables"){
         var optionsList = vegtables;
         document.getElementsByName('foods')[0].options[0].innerHTML = optionsList[0][0];
-        document.getElementsByName('foods')[1].options[1].innerHTML = optionsList[1][0];
-        document.getElementsByName('foods')[2].options[2].innerHTML = optionsList[2][0];
-        document.getElementsByName('foods')[3].options[3].innerHTML = optionsList[3][0];
-        document.getElementsByName('foods')[4].options[4].innerHTML = optionsList[4][0];
+        document.getElementsByName('foods')[0].options[1].innerHTML = optionsList[1][0];
+        document.getElementsByName('foods')[0].options[2].innerHTML = optionsList[2][0];
+        document.getElementsByName('foods')[0].options[3].innerHTML = optionsList[3][0];
+        document.getElementsByName('foods')[0].options[4].innerHTML = optionsList[4][0];
     }
     if (selectedtype == "dairy"){
         var optionsList = dairy;
         document.getElementsByName('foods')[0].options[0].innerHTML = optionsList[0][0];
-        document.getElementsByName('foods')[1].options[1].innerHTML = optionsList[1][0];
-        document.getElementsByName('foods')[2].options[2].innerHTML = optionsList[2][0];
-        document.getElementsByName('foods')[3].options[3].innerHTML = optionsList[3][0];
-        document.getElementsByName('foods')[4].options[4].innerHTML = optionsList[4][0];
+        document.getElementsByName('foods')[0].options[1].innerHTML = optionsList[1][0];
+        document.getElementsByName('foods')[0].options[2].innerHTML = optionsList[2][0];
+        document.getElementsByName('foods')[0].options[3].innerHTML = optionsList[3][0];
+        document.getElementsByName('foods')[0].options[4].innerHTML = optionsList[4][0];
     }
     if (selectedtype == "grains"){
         var optionsList = grains;
         document.getElementsByName('foods')[0].options[0].innerHTML = optionsList[0][0];
-        document.getElementsByName('foods')[1].options[1].innerHTML = optionsList[1][0];
-        document.getElementsByName('foods')[2].options[2].innerHTML = optionsList[2][0];
-        document.getElementsByName('foods')[3].options[3].innerHTML = optionsList[3][0];
-        document.getElementsByName('foods')[4].options[4].innerHTML = optionsList[4][0];
+        document.getElementsByName('foods')[0].options[1].innerHTML = optionsList[1][0];
+        document.getElementsByName('foods')[0].options[2].innerHTML = optionsList[2][0];
+        document.getElementsByName('foods')[0].options[3].innerHTML = optionsList[3][0];
+        document.getElementsByName('foods')[0].options[4].innerHTML = optionsList[4][0];
     }
 }
