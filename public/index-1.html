@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="nutrikit.css">
-    <script src="nutrikit.js"></script>
+    <script src="nutrikit.js">
+        changetype();
+    </script>
     <title>Web Assignment 1</title>
 </head>
 <body>
@@ -10,17 +12,21 @@
     <h3>NutriKit allows you to select your groceries, and track your nutritional progress (good or bad)</h3>
     <div>
         <div class="left">
-            <select id="foodtypes" name="foodtypes">
-                <option value="protein">Protein</option>
+            <select id="foodtypes" name="foodtypes" onchange="changetype()">
+                <option value="proteins">Protein</option>
                 <option value="fruits">Fruits</option>
-                <option value="vegetables">Vegetables</option>
+                <option value="vegtables">Vegetables</option>
                 <option value="dairy">Dairy</option>
                 <option value="grains">Grains</option>
-                </select>
+            </select>
         </div>
         <div class="center">
             <select name="foods" id="foods" multiple>
-
+                <option value="1">none</option>
+                <option value="2">none</option>
+                <option value="3">none</option>
+                <option value="4">none</option>
+                <option value="5">none</option>
             </select>
         </div>
         <div class="right">
