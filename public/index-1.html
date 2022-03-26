@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="nutrikit.css">
     <script src="nutrikit.js">
         changetype();
+        addTo();
+        document.getElementById('submit').addEventListener('click')
     </script>
     <title>Web Assignment 1</title>
 </head>
@@ -22,20 +24,22 @@
         </div>
         <div class="center">
             <select name="foods" id="foods" multiple>
-                <option value="1">none</option>
-                <option value="2">none</option>
-                <option value="3">none</option>
-                <option value="4">none</option>
-                <option value="5">none</option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
             </select>
-            <button>Add To Selected</button>
+            <button type="submit" value="Submit" onclick="addTo()">Move To Selected</button>
         </div>
         <div class="right">
+            <form action="">
             <select name="selected" id="selected" multiple>
-
+                <option></option>
             </select>
-            <button>Remove From Selected</button>
+            <button type="delete" name="delete" value="delete">Remove From Selected</button>
             <Label>Total Calories: </Label>
+        </form>
         </div>
     </div>
 </body>

@@ -62,3 +62,36 @@ function changetype(){
         document.getElementsByName('foods')[0].options[4].innerHTML = optionsList[4][0];
     }
 }
+
+function addTo(){
+    var selected = document.getElementsById("foods").value;
+    if (selected == '1'){
+        var x = document.getElementByName("foods")[0].options[0].innerHTML;
+        var newOption = new Option(x, x);
+        document.getElementByName("selected").selectBox.add(newOption, undefined);
+    }
+    if (selected == '2'){
+        var x = document.getElementByName("foods")[0].options[1].innerHTML;
+        var newOption = new Option(x, x);
+        HTMLSelectElement.getElementByName("selected").selectBox.add(newOption, undefined);
+    }
+    if (selected == '3'){
+        var x = document.getElementByName("foods")[0].options[2].innerHTML;
+        var newOption = new Option(x, x);
+        document.getElementByName("selected").selectBox.add(newOption, undefined);
+    }
+    if (selected == '4'){
+        var x = document.getElementByName("foods")[0].options[3].innerHTML;
+        var newOption = new Option(x, x);
+        document.getElementByName("selected").selectBox.add(newOption, undefined);
+    }
+    if (selected == '5'){
+        var x = document.getElementByName("foods")[0].options[4].innerHTML;
+        var newOption = new Option(x, x);
+        document.getElementByName("selected").selectBox.add(newOption, undefined);
+    }
+}
+
+function removeFrom(){
+    
+}
