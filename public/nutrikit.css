@@ -6,11 +6,11 @@ body{
     background-color: bisque;
 }
 .left{
-    text-align: left;
+    float: left;
 }
 
 .right{
-    text-align: right;
+    float: right;
 }
 .center{
     text-align: center;
