@@ -12,7 +12,7 @@
 <body>
     <h1>NutriKit Food Planner</h1>
     <h3>NutriKit allows you to select your groceries, and track your nutritional progress (good or bad)</h3>
-    <div>
+    <div class="all">
         <div class="left">
             <h2>Categories</h2>
             <select id="foodtypes" name="foodtypes" onchange="changetype()">
@@ -36,10 +36,10 @@
         </div>
         <div class="right">
             <h2>Selected Items</h2>
-            <input type="button" class="testButton" value="<" onclick="swap('selected','foods')"/>
+            <input type="button" class="testButton" value="<" onclick="swap('selected','foods'); update('selected');"/>
             <select name="selected" id="selected" multiple>
             </select>
-            <h2>Total Calories: </h2><div id="calories"></div>
+            <h2>Total Calories: <div id="calories"></div></h2>
         </div>
     </div>
 </body>
