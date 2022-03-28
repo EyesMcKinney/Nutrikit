@@ -106,7 +106,7 @@ function update(List){
     var selected = document.getElementById(List)
     for (var i = 0; i < selected.length; i++){
         var opt =  document.getElementsByName('selected')[0].options[i].value;
-        total = Number(total) + Number(opt);
+        total += Number(opt);
+        document.getElementById("calories").innerHTML = Number(total);
     }
-    document.getElementById("calories").innerHTML = Number(total);
 }
