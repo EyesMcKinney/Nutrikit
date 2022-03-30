@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="nutrikit.css">
+    <script src="nutrikit.js">
+        changetype();
+        addTo();
+        document.getElementById('submit').addEventListener('click')
+    </script>
+    <title>Web Assignment 1</title>
+</head>
+<body>
+    <h1>NutriKit Food Planner</h1>
+    <h3>NutriKit allows you to select your groceries, and track your nutritional progress (good or bad)</h3>
+    <div class="all">
+        <div class="left">
+            <h2>Categories</h2>
+            <select id="foodtypes" name="foodtypes" onchange="changetype()">
+                <option value="proteins">Protein</option>
+                <option value="fruits">Fruits</option>
+                <option value="vegtables">Vegetables</option>
+                <option value="dairy">Dairy</option>
+                <option value="grains">Grains</option>
+            </select>
+        </div>
+        <div class="center">
+            <h2>Menu Items</h2>
+            <select name="foods" id="foods" multiple>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+            </select>
+            <input type="button" class="testButton" value=">" onclick="swap('foods','selected'); update('selected');"/>
+        </div>
+        <div class="right">
+            <h2>Selected Items</h2>
+            <input type="button" class="testButton" value="<" onclick="swap('selected','foods'); update('selected');"/>
+            <select name="selected" id="selected" multiple>
+            </select>
+            <h2>Total Calories: <div id="calories"></div></h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+* {
+    font-family: 'Segoe UI';
+}
+
+body{
+    background-color: bisque;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.all{
+    align-items: center;
+    align-content: center;
+    width: 1600px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
